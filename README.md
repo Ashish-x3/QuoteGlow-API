@@ -1,27 +1,65 @@
-#QuoteGlow API
-QuoteGlow is a quote-sharing web app API that allows users to retrieve daily quotes, random quotes, explore quotes by category, and even access AI-generated quotes. The backend is built with Express.js and integrates seamlessly with MongoDB for dynamic content fetching.
 
-Features
-Daily Quote: Provides a daily quote that can be fetched via the /api/daily-quote route.
+# QuoteGlow API
 
-Random Quotes: Fetches random quotes using the /api/random-quote route.
+QuoteGlow is a quote-sharing web app API that allows users to retrieve daily quotes, random quotes, explore quotes by category, and even access AI-generated quotes. The backend is built with Express.js
 
-Categories: Allows users to explore quotes by categories through the /api/categories route.
 
-AI Quotes: Fetches AI-generated quotes via the /api/ai route.
+## Endpoints
 
-Endpoints
-1. GET /api/quotes
-Fetches a list of all quotes available.
 
-2. GET /api/daily-quote
-Fetches the daily quote.
+- GET /api/quotes Fetches a list of all quotes available.
 
-3. GET /api/random-quote
-Fetches a random quote.
+- GET /api/daily-quote Fetches the daily quote.
 
-4. GET /api/categories
-Fetches a list of available quote categories.
+- GET /api/random-quote Fetches a random quote.
 
-5. GET /api/ai
-Fetches AI-generated quotes.
+- GET /api/categories Fetches a list of available quote categories.
+
+- GET /api/ai Fetches AI-generated quotes.
+
+## API Reference
+
+#### Get Quotes
+
+```http
+  GET /api/quotes
+
+```
+
+#### Get Daily Quote
+
+```http
+  GET /api/daily-quote
+```
+
+#### Get Random Quote
+
+```http
+  GET /api/random-quote
+```
+
+#### Get Quotes by Category
+
+```http
+  GET /api/categories/
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Category` | `string` | **Required**.  |
+
+#### Get AI-Generated Quotes
+
+```http
+  GET /api/ai
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Prompt` | `string` | **Required**.  |
+
+- Get 8 quotes about success
+- Find 9 motivation quotes
+- Create 5 quotes about friendship
+- Discover 10 hubspot quotes
+- Generate 3 zen quotes quotes
