@@ -37,4 +37,7 @@ app.use('/api/categories',categoriesRoutes)
 const aiQuotes = require('./src/routes/aiRoute')
 app.use('/api/ai', aiQuotes)
 
+const dailyHoroScope = require('./src/routes/dailyhoroscope')
+app.use('/api/daily-horoscope', dailyHoroScope)
+
 app.listen(port, () => console.log(`QuoteGlow API listening on port ${port}!`))

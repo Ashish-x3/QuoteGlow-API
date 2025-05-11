@@ -15,4 +15,5 @@ async function fetchQuote() {
   }
 }
 
+
 module.exports = fetchQuote;
