@@ -1,4 +1,4 @@
-const fetchQuotesRaw  = require("../utils/fetchDailyQuote");
+const fetchQuotesRaw = require("../utils/fetchDailyQuote");
 
 const getDailyQuote = async (req, res) => {
   try {
