@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: quoteglow-api
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: AI_URL
+        value: https://api.jsongpt.com/json
+      - key: CATEGORY_URL
+        value: http://api.quotable.io/quotes
+      - key: QUOTE_URL
+        value: https://zenquotes.io/api/
+      - key: RANDOM_QUOTE_URL
+        value: https://favqs.com/api/qotd
+      - key: PORT
+        value: 4000
+    runtime: "node"  
+    branch: dev

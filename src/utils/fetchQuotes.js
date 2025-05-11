@@ -3,7 +3,7 @@ const axios = require('axios');
 async function fetchQuotes() {
   try {
     const baseURL = process.env.QUOTE_URL;
-    const response = await axios.get(`${baseURL}+quotes`);
+    const response = await axios.get(`${baseURL}quotes`);
     const quotes = response.data;
 
     return quotes.map(quote => ({
