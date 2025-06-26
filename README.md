@@ -1,4 +1,3 @@
-
 # QuoteGlow API
 
 QuoteGlow is a quote-sharing web app API that allows users to retrieve daily quotes, random quotes, explore quotes by category, and even access AI-generated quotes. The backend is built with Express.js
